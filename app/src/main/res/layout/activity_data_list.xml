@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FF25C065"
+    tools:context="com.books.saumy.books.ViewFavorites">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectgenre"
+        android:text="GENRE "
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/selectgenre"
+        android:id="@+id/spin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="15dp">
+    </Spinner>
+    <TextView
+        android:id="@+id/book_cover"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="COVER"
+        android:layout_below="@+id/spin"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#831c181a"
+        />
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/spin"
+        android:layout_toRightOf="@+id/book_cover"
+        android:text="BOOK NAME"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#831c181a"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/authorname"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/spin"
+        android:layout_toRightOf="@+id/bookname"
+        android:layout_alignParentRight="true"
+        android:text="AUTHOR"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#831c181a"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00000000"
+        android:layout_marginTop="68dp"
+        ></View>
+    <ListView
+        android:layout_below="@+id/book_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"
+        android:background="#fffcfdff">
+    </ListView>
+</RelativeLayout>

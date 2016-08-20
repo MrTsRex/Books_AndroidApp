@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.books.saumy.books.AddBookActivity"
+    android:background="#ff312d2f">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/book_title"
+        android:autoText="false"
+        android:background="#ffa9b3a6"
+        android:layout_marginTop="20dp"
+        android:hint="@string/add_book"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/author_name"
+        android:autoText="false"
+        android:background="#ffa9b3a6"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/book_title"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/author"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/genre"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/author_name"
+        android:autoText="false"
+        android:background="#ffa9b3a6"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/genre"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submit"
+        android:layout_below="@+id/genre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp" />
+
+</RelativeLayout>

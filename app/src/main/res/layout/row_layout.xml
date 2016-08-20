@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/row"
+    >
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:src="@drawable/harrypotterandthedeathlyhallows"
+        />
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/book_cover"
+        android:text="This is book name"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/authorname"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@+id/bookname"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:text="Author name"
+        android:gravity="center"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+       android:background="#ff312d2f"
+        android:layout_marginTop="76dp"
+        ></View>
+
+</RelativeLayout>

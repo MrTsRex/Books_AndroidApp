@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.books.saumy.books.DataListActivity">
+    <TextView
+        android:id="@+id/book_cover"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="COVER"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#FF25C065"
+        />
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/book_cover"
+        android:text="BOOK NAME"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#FF25C065"
+        />
+    <TextView
+        android:id="@+id/authorname"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/bookname"
+        android:layout_alignParentRight="true"
+        android:text="AUTHOR"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#FF25C065"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="68dp"
+        ></View>
+    <ListView
+        android:layout_below="@+id/book_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"
+        >
+    </ListView>
+
+</RelativeLayout>
